@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    // 初始化版本v1.0.0
+
     m_thread = new MyThread;
     QObject::connect(m_thread, &MyThread::testing, this, &MainWindow::thread_testing);
 }
