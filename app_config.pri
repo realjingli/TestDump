@@ -14,7 +14,7 @@ QMAKE_CXXFLAGS += /utf-8
 #RC_ICONS = res/app.ico
 
 #exe文件版本
-VERSION = 1.0.0.0
+VERSION = 1.0.1.0
 
 #禁止在exe文件名后面加上版本后缀
 CONFIG += skip_target_version_ext
