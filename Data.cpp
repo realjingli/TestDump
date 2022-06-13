@@ -7,11 +7,11 @@ Data::Data()
 
 QString Data::name()
 {
-    return "data name";
+    return "data name 11111";
 }
 
 QString Data::text()
 {
-    return "data text";
+    return "data text 222222";
 
 }
