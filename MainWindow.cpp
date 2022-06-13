@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     // 初始化版本v1.0.0
+    // master分支未添加Data class
 
     m_thread = new MyThread;
     QObject::connect(m_thread, &MyThread::testing, this, &MainWindow::thread_testing);
@@ -27,7 +28,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-
     QString *s = nullptr;
     s->append("ssfsdsabc");
 }
