@@ -21,6 +21,8 @@ private slots:
 
     void on_startThreadButton_clicked();
 
+    void on_showDataButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

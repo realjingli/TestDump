@@ -4,9 +4,10 @@
 #include <QMessageBox>
 #include <QFileInfo>
 #include <QDebug>
-
+#include <QMessageBox>
 
 #include "MyThread.h"
+#include "Data.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -42,3 +43,14 @@ void MainWindow::thread_testing(const QString &text)
 {
     ui->label->setText(text + " 次");
 }
+
+void MainWindow::on_showDataButton_clicked()
+{
+    Data *data = new Data;
+    QString name = data->name();
+    QString text = data->text();
+
+
+    QMessageBox::information(this, "ss", name + " " + text);
+}
+
