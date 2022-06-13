@@ -36,11 +36,13 @@ include(app_config.pri)
 
 
 SOURCES += \
+    Data.cpp \
     MyThread.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
+    Data.h \
     MainWindow.h \
     MyThread.h \
     helper.hpp
