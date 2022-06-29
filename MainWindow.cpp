@@ -18,6 +18,9 @@ MainWindow::MainWindow(QWidget *parent)
     // 初始化版本v1.0.0
     // master分支未添加Data class
 
+
+    // 增加贮藏测试
+
     m_thread = new MyThread;
     QObject::connect(m_thread, &MyThread::testing, this, &MainWindow::thread_testing);
 }
@@ -52,5 +55,7 @@ void MainWindow::on_showDataButton_clicked()
 
 
     QMessageBox::information(this, "ss", name + " " + text);
+
+    ui->scrollArea;
 }
 
