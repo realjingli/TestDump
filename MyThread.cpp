@@ -1,5 +1,7 @@
 #include "MyThread.h"
 
+#include <QDebug>
+
 MyThread::MyThread()
 {
     m_count = 0;
@@ -58,6 +60,12 @@ void MyThread::run()
             // 测试程序崩溃
             // 测试程序崩溃
 
+
+
+            QString str = "abcdefg";
+            int len = str.length();
+
+            qDebug() << "len of str: " << len;
 
             s->append("aaaaa");
 
